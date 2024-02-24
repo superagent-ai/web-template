@@ -3,6 +3,7 @@
 import * as React from "react";
 import { RxArrowUp } from "react-icons/rx";
 import Textarea from "react-textarea-autosize";
+import { TbPaperclip } from "react-icons/tb";
 
 import { useEnterSubmit } from "@/lib/hooks";
 import { cn } from "@/lib/utils";
@@ -37,6 +38,9 @@ export default function PromptFrom({ onSubmit, isLoading }: PromptProps) {
       ref={formRef}
     >
       <div className="bg-[#292929] relative flex max-h-50 w-full grow flex-col overflow-hidden px-2 rounded-xl md:rounded-2xl border border-[#4C4C4C]">
+        <div className="absolute left-4 top-4">
+          <TbPaperclip className="text-2xl cursor-pointer hover:text-gray-400" />
+        </div>
         <Textarea
           ref={inputRef}
           tabIndex={0}
@@ -46,9 +50,9 @@ export default function PromptFrom({ onSubmit, isLoading }: PromptProps) {
           onChange={(e) => setInput(e.target.value)}
           placeholder="Hey Jane, how can I back you up?"
           spellCheck={false}
-          className="min-h-[40px] w-full resize-none bg-transparent px-2 py-[1.0rem] focus-within:outline-none sm:text-md"
+          className="min-h-[40px] w-full resize-none bg-transparent py-[1.0rem] focus-within:outline-none sm:text-md px-12"
         />
-        <div className="absolute right-2 top-1.5 sm:right-3">
+        <div className="absolute right-4 top-1.5 sm:right-3">
           <Button
             type="submit"
             className={cn(
