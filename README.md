@@ -1,7 +1,4 @@
-# Humana AI ❤️
-
-## Demo
-[https://human-ai.vercel.app](https://humana-ai.vercel.ap)
+# Superagent Chat Demo ❤️
 
 ## Getting Started
 1. Install dependencies:
