@@ -44,7 +44,7 @@ export default function PromptFrom({ onSubmit, isLoading }: PromptProps) {
           rows={1}
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Ställ en fråga eller sök efter dokument..."
+          placeholder="Hey Jane, how can I back you up?"
           spellCheck={false}
           className="min-h-[40px] w-full resize-none bg-transparent px-2 py-[1.0rem] focus-within:outline-none sm:text-md"
         />
